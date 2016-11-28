@@ -30,6 +30,34 @@ if (!is_null($events['events'])) {
 						$text = "ไม่มงคลอย่าเอาไม่ตั้งชื่อสิ่งใดๆในจักรวาล เด็ดขาด ! \r\n";
 					break;
 
+				case 'บี':
+						$text = "ปรมาจารย์สายควัน ! \r\n";
+					break;
+
+				case 'ต่อ':
+						$text = "สิงห์รถบรรทุก กรุงเทพฯ - ระยอง ! \r\n";
+					break;
+
+				case 'ต้นปาล์ม':
+						$text = "Prefect Man ! \r\n";
+					break;
+
+				case 'ปุ๊ก':
+						$text = "น่ารักอะ อิอิ ! \r\n";
+					break;
+
+				case 'มะปราง':
+						$text = "ติ่งเกาหลี ลีมินโฮ ! \r\n";
+					break;
+
+				case 'ลูกปลา':
+						$text = "กินได้ตลอดเวลา ! \r\n";
+					break;
+
+				case 'อิท':
+						$text = "ไอ้เด็กสกปรก ! \r\n";
+					break;
+
 				case 'thaipbs':
 						$text = "redirect('http://thaipbs.or.th'); \r\n";
 					break;
