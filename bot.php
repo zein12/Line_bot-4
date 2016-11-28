@@ -14,7 +14,6 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
-
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			
@@ -59,10 +58,6 @@ if (!is_null($events['events'])) {
 						$text = "ไอ้เด็กสกปรก ! \r\n";
 					break;
 
-				case 'บ้านเรา':
-						$text = "address";
-					break;
-
 				case 'thaipbs':
 						$text = "redirect('http://thaipbs.or.th'); \r\n";
 					break;
@@ -78,28 +73,12 @@ if (!is_null($events['events'])) {
 				'text' => $text
 			];
 
-			// $location = [
-
-			//     "type": "location",
-			//     "title": "บ้านของเรา",
-			//     "address": "89/2 บ้านเกณิกา (บ้านนี้ มีรัก)",
-			//     "latitude": 13.8558361,
-			//     "longitude": 100.5635089
-
-			// ];
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
-			// if ($text == 'address') {
-			// 	$data = [
-			// 		'replyToken' => $replyToken,
-			// 		'messages' => [$location],
-			// 	];
-			// }
-
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
