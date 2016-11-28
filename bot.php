@@ -31,7 +31,7 @@ if (!is_null($events['events'])) {
 					break;
 
 				case 'thaipbs':
-						$text = "http://thaipbs.or.th \r\n";
+						$text = "redirect('http://thaipbs.or.th'); \r\n";
 					break;
 				
 				default:
