@@ -93,12 +93,12 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
-			if ($text == 'address') {
-				$data = [
-					'replyToken' => $replyToken,
-					'messages' => [$location],
-				];
-			}
+			// if ($text == 'address') {
+			// 	$data = [
+			// 		'replyToken' => $replyToken,
+			// 		'messages' => [$location],
+			// 	];
+			// }
 
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
