@@ -40,8 +40,17 @@ if (!is_null($events['events'])) {
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			$result = curl_exec($ch);
 			curl_close($ch);
+			switch ($result) {
+				case 'สวัสดี':
+						echo "เออ ไหว้พระเถอะลูก ! \r\n";
+					break;
+				
+				default:
+						echo "อะไรเนี่ย ! ฉันยังฉลาดไม่พอ แต่ฉลาดกว่าคุณ\r\n";
+					break;
+			}
 
-			echo $result . "\r\n";
+			
 		}
 	}
 }
