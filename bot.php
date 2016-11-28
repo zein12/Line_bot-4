@@ -60,7 +60,7 @@ if (!is_null($events['events'])) {
 					break;
 
 				case 'บ้านเรา':
-						$text = "ไaddress";
+						$text = "address";
 					break;
 
 				case 'thaipbs':
@@ -78,15 +78,15 @@ if (!is_null($events['events'])) {
 				'text' => $text
 			];
 
-			$location = [
+			// $location = [
 
-			    "type": "location",
-			    "title": "บ้านของเรา",
-			    "address": "89/2 บ้านเกณิกา (บ้านนี้ มีรัก)",
-			    "latitude": 13.8558361,
-			    "longitude": 100.5635089
+			//     "type": "location",
+			//     "title": "บ้านของเรา",
+			//     "address": "89/2 บ้านเกณิกา (บ้านนี้ มีรัก)",
+			//     "latitude": 13.8558361,
+			//     "longitude": 100.5635089
 
-			];
+			// ];
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
