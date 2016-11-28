@@ -81,7 +81,7 @@ if (!is_null($events['events'])) {
 			$location = [
 
 			    "type": "location",
-			    "title": "my location",
+			    "title": "บ้านของเรา",
 			    "address": "89/2 บ้านเกณิกา (บ้านนี้ มีรัก)",
 			    "latitude": 13.8558361,
 			    "longitude": 100.5635089
@@ -89,15 +89,14 @@ if (!is_null($events['events'])) {
 			]
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
+			$data = [
+				'replyToken' => $replyToken,
+				'messages' => [$messages],
+			];
 			if ($text == 'address') {
 				$data = [
 					'replyToken' => $replyToken,
 					'messages' => [$location],
-				];
-			}else{
-				$data = [
-				'replyToken' => $replyToken,
-				'messages' => [$messages],
 				];
 			}
 
