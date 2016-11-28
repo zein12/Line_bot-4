@@ -29,6 +29,10 @@ if (!is_null($events['events'])) {
 				case 'ชาญวุฒิ':
 						$text = "ไม่มงคลอย่าเอาไม่ตั้งชื่อสิ่งใดๆในจักรวาล เด็ดขาด ! \r\n";
 					break;
+
+				case 'thaipbs':
+						$text = "http://thaipbs.or.th \r\n";
+					break;
 				
 				default:
 						$text = "อะไรเนี่ย ! ฉันยังฉลาดไม่พอ แต่ฉลาดกว่าคุณ\r\n";
