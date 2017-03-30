@@ -1,6 +1,6 @@
 <?php 
   
-$access_token = 'SgzRYItJH9a9DBXajfmSOPP2LalYt4wgIx1fVmy5QVquT5GHhyDk4pZsG2sORBFd+gIQJxELmgnW17qUVVo2ss1CRAWU/kGHPCBUypto+RF9pVGJ8wrAl4XVXcrB0PQKCQnb4aqN6YRK0gmHlg6Q8QdB04t89/1O/w1cDnyilFU=';
+$access_token = '3/cEBpOR0mjAMUtnHKrSrx3N6FnMVNPYfXBIwMO6HNGaljxuxTxZz2fGrmZYFwqfV3dvAWMa7FEGrmOONfbZ7or1wxYgpjbtFMS0Mkk+RftjvYSrUpThxAHGiivf2M662z2zM5P8BSKby0dJiBG3GQdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -18,12 +18,12 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			
 			switch ($text) {
-				case 'สวัสดี':
-						$text = "เออ ไหว้พระเถอะลูก ! \r\n";
+				case 'halo':
+						$text = "Yess sir ! \r\n";
 					break;
 
-				case 'กล้า':
-						$text = "แปลว่า ไม่กลัว แต่ถ้าเป็นชื่อคน มักขี้เกียจและขี้โม้ ! \r\n";
+				case 'tantangan':
+						$text = "Tapi itu tidak takut orang. Sering malas dan sombong ! \r\n";
 					break;
 
 				case 'ชาญวุฒิ':
@@ -54,8 +54,8 @@ if (!is_null($events['events'])) {
 						$text = "กินได้ตลอดเวลา ! \r\n";
 					break;
 
-				case 'อิท':
-						$text = "ไอ้เด็กสกปรก ! \r\n";
+				case 'NF':
+						$text = "naon sih ! \r\n";
 					break;
 
 				case 'thaipbs':
@@ -63,7 +63,7 @@ if (!is_null($events['events'])) {
 					break;
 				
 				default:
-						$text = "อะไรเนี่ย ! ฉันยังฉลาดไม่พอ แต่ฉลาดกว่าคุณ\r\n";
+						$text = "Apa ! Saya tidak cukup cerdas Tapi lebih pintar dari Anda\r\n";
 					break;
 			}
 
